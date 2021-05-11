@@ -29,6 +29,7 @@ const todoList = [
 
 export default function Todo(){
     const incompletedCount = todoList.filter(todo => !todo.completed).length;
+
   return(
     <>
       <h1>

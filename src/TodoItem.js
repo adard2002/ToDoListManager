@@ -12,7 +12,7 @@ export default function TodoItem(props)
     <Toast>
       <Toast.Header>
         <Badge pill variant={pillVariant}>{pillText}</Badge>
-        <strong class="ml-2 mr-auto">{todo.assignedTo}</strong>
+        <strong className="ml-2 mr-auto">{todo.assignedTo}</strong>
       </Toast.Header>
       <Toast.Body>
         {todo.title}

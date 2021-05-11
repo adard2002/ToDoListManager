@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Home';
 import AboutMe from './AboutMe';
 import Todo from './Todo';
+import Form from './Form';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <li><NavLink to = "/" exact>Home</NavLink></li>
           <li><NavLink to = "/Todo">Todo</NavLink></li>
           <li><NavLink to = "/AboutMe">About Me I'm speshal</NavLink></li>
+          <li><NavLink to = "/Form">Form</NavLink></li>
         </ul>
         </nav>
       </header>
@@ -27,6 +29,9 @@ function App() {
         </Route>
         <Route path="/Todo" exact>
           <Todo />
+        </Route>
+        <Route path="Form">
+          <Form />
         </Route>
         </Switch>
       </main>
