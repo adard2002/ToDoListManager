@@ -19,11 +19,11 @@ const todoList = [
     "completed": true
   },
   {
-    id: 3,
-    title: "Run around the block and check out what ppl are doin these days",
-    difficulty: 4,
-    assignedTo: "Rosie",
-    completed: false
+    "id": 3,
+    "title": "Run around the block and check out what ppl are doin these days",
+    "difficulty": 4,
+    "assignedTo": "Rosie",
+    "completed": false
   }
 ];
 

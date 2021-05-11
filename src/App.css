@@ -66,11 +66,11 @@ h1 {
   margin: 50px;
   font-size: 25px;
   color: rgb(207, 207, 207);
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(83, 83, 83);
 }
 
 .todo-form {
-  border: 2px rgb(104, 104, 104) solid;
+  border: 2px rgb(207, 207, 207) solid;
   border-radius: 5px;
   padding: 10px;
 }

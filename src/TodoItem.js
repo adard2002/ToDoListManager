@@ -5,7 +5,7 @@ export default function TodoItem(props)
 {
   const { todo } = props;
   const pillText = todo.completed ? 'Complete' : 'Pending';
-  const pillVariant = todo.completed ? 'danger' : 'success';
+  const pillVariant = todo.completed ? 'success' : 'danger';
 
   return (
     <Toast>
