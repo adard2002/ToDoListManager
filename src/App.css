@@ -45,20 +45,42 @@
   position: fixed;
 }
 
-.NavBar a {
+.NavBar li a {
   font-size: 25px;
-  color: rgb(84, 159, 230);
+  text-decoration-line: none;
+  color: rgb(84, 159, 230); 
 }
 
 .NavBar li {
   display: inline;
   margin: 15px;
-  color: gray;
+  /* color: gray; */
 }
+/* 
+.NavBar li a.active {
+  color: rgb(224, 179, 255);
+} */
 
 h1 {
-  padding: 15px;
+  padding: 25px;
   margin: 50px;
   color: rgb(207, 207, 207);
-  background: rgb(20, 20, 20);
+  background-color: rgb(20, 20, 20);
+}
+
+.todo-form {
+  border: 2px rgb(104, 104, 104) solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.pending {
+  background-color: rgb(255, 101, 101);
+  color: rgb(36, 36, 36);
+}
+
+.complete {
+  background-color: rgb(169, 255, 169);
+  color: rgb(36, 36, 36);
 }
