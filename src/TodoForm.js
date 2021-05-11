@@ -4,7 +4,7 @@ export default function TodoForm() {
   const handleSubmit = e => {
     e.preventDefault();
 
-    console.log(e.target.TodoItem.value, e.target.TodoAssigned.value);
+    console.log(e.target.TodoItem.value, e.target.TodoAssigned.value, e.target.slider.value);
   }
   return (
     <div className="todo-form">
@@ -22,7 +22,7 @@ export default function TodoForm() {
           <Form.Label>Difficulty</Form.Label>
           <Form.Control type="range" min="0" max="5" step="1" />
         </Form.Group>
-        <Button type="submit">Add Item</Button>
+        <Button type="submit" variant="primary">Add Item</Button>
       </Form>
     </div>
   )
