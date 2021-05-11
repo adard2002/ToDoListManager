@@ -8,6 +8,7 @@ export default function TodoItem(props)
   const pillVariant = todo.completed ? 'success' : 'danger';
 
   return (
+    <div class="TodoItems">
     <Toast>
       <Toast.Header>
         <Badge pill variant={pillVariant}>{pillText}</Badge>
@@ -20,5 +21,6 @@ export default function TodoItem(props)
         </div>
       </Toast.Body>
     </Toast>
+    </div>
   )
 }
