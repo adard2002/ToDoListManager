@@ -5,7 +5,7 @@ export default function TodoItem(props)
 {
   const { todo } = props;
   const pillText = todo.completed ? 'Complete' : 'Pending';
-  const pillVariant = todo.compelted ? 'Danger' : 'Success';
+  const pillVariant = todo.completed ? 'danger' : 'success';
 
   return (
     <Toast>
@@ -15,7 +15,7 @@ export default function TodoItem(props)
       </Toast.Header>
       <Toast.Body>
         {todo.title}
-        <div className="textRight">
+        <div className="text-right">
           <small>Difficulty: {todo.difficulty}</small>
         </div>
       </Toast.Body>

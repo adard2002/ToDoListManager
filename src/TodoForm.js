@@ -2,7 +2,7 @@ import { Form, Button } from 'react-bootstrap';
 
 export default function TodoForm() {
   return (
-    <div class="todoform">
+    <div class="todo-form">
       <h2>Add To Do Item</h2>
       <Form>
         <Form.Group controlId="AddTodo">

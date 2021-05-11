@@ -1,4 +1,4 @@
-import { Switch, Route} from 'react-router-dom';
+import { Switch, Route, NavLink} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Home';
@@ -9,11 +9,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav className="NavBar"><ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/Todo">Todo</a></li>
-          <li><a href="/AboutMe">About Me I'm speshal</a></li>
-        </ul></nav>
+        <nav className="NavBar">
+        <ul>
+          <li><NavLink to = "/" exact>Home</NavLink></li>
+          <li><NavLink to = "/Todo">Todo</NavLink></li>
+          <li><NavLink to = "/AboutMe">About Me I'm speshal</NavLink></li>
+        </ul>
+        </nav>
       </header>
       <main>
         <Switch>

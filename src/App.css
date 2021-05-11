@@ -64,6 +64,7 @@
 h1 {
   padding: 25px;
   margin: 50px;
+  font-size: 25px;
   color: rgb(207, 207, 207);
   background-color: rgb(20, 20, 20);
 }
@@ -75,7 +76,7 @@ h1 {
 }
 
 
-.pending {
+/* .pending {
   background-color: rgb(255, 101, 101);
   color: rgb(36, 36, 36);
 }
@@ -83,4 +84,4 @@ h1 {
 .complete {
   background-color: rgb(169, 255, 169);
   color: rgb(36, 36, 36);
-}
+} */
