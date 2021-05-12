@@ -43,22 +43,83 @@
   background-color: rgb(0, 110, 212);
   height: 50px;
   position: fixed;
-}
-
-.NavBar a {
-  font-size: 25px;
-  color: rgb(84, 159, 230);
+  /* margin-bottom: 25px; */
 }
 
 .NavBar li {
   display: inline;
   margin: 15px;
+  text-align: center;
   color: gray;
 }
 
-h1 {
-  padding: 15px;
-  margin: 50px;
-  color: rgb(207, 207, 207);
-  background: rgb(20, 20, 20);
+.NavBar li a {
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  color: rgb(84, 159, 230); 
 }
+
+.NavBar li a.active {
+  color: rgb(224, 179, 255);
+}
+
+h1 {
+  margin-top: 50px;
+  padding: 25px;
+  margin: 50px;
+  font-size: 25px;
+  color: rgb(207, 207, 207);
+  background-color: rgb(83, 83, 83);
+}
+
+body {
+  margin-top: 60px;
+}
+
+.wrapper h1{
+  margin-top: 60px;
+  background-color: rgb(83, 83, 83);
+  font-size: 25px;
+  padding: 10px 25px;
+}
+
+
+.todo-form {
+  border: 2px rgb(207, 207, 207) solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.badge.badge-secondary{
+  background-color: rgb(83, 83, 83);
+}
+
+.LoginForm {
+  padding-left: 50%;
+  border: 2px rgb(207, 207, 207) solid;
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+}
+/* .TodoListForm {
+  width: 50%;
+}
+
+.TodoItems {
+  
+}
+
+.HeaderOne {
+  width: 100%;
+} */
+
+/* .pending {
+  background-color: rgb(255, 101, 101);
+  color: rgb(36, 36, 36);
+}
+
+.complete {
+  background-color: rgb(169, 255, 169);
+  color: rgb(36, 36, 36);
+} */
