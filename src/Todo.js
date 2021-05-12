@@ -8,23 +8,23 @@ import TodoItem from './TodoItem';
 const todoList = [
   {
     "id": 1,
-    "title": "Do the dishes, pots and pans",
+    "title": "Take care of critters",
     "difficulty": 1,
-    "assignedTo": "John",
+    "assignedTo": "Ricardo",
     "completed": false
   },
   {
     "id": 2,
-    "title": "Take the dog for a nice long walk, walk 3 miles at least",
+    "title": "Take the cats out for a nice long walk",
     "difficulty": 1,
-    "assignedTo": "Cathy",
+    "assignedTo": "Stephanie",
     "completed": true
   },
   {
     "id": 3,
-    "title": "Run around the block and check out what ppl are doin these days",
+    "title": "Run around the block and run around in circles",
     "difficulty": 4,
-    "assignedTo": "Rosie",
+    "assignedTo": "BECKY",
     "completed": false
   }
 ];
