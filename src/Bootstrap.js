@@ -9,7 +9,7 @@ export default function Bootstra()
   return (
     <>
       <h1>Bootstrap here</h1>
-      <Alert variant="danger">FAlert {user.name}</Alert>
+      <Alert variant="danger">Alert {user.username}</Alert>
 
       <Button variant="danger">Ello!</Button>
     </>
