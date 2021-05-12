@@ -1,4 +1,6 @@
 import Badge from 'react-bootstrap/Badge';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import TodoForm from './TodoForm';
 import TodoItem from './TodoItem';
 
@@ -31,14 +33,24 @@ export default function Todo(){
     const incompletedCount = todoList.filter(todo => !todo.completed).length;
 
   return(
-    <>
+    <div className="wrapper">
       <h1>
         To Do List Manager <Badge variant="secondary">{incompletedCount}</Badge>
       </h1>
-      <TodoForm />
+      {/* <TodoForm />
       {todoList.map(item => (
         <TodoItem todo={item} />
-      ))}
-    </>
+      ))} */}
+      <Row>
+        <Col md={6} lg={4}>
+          <TodoForm />
+        </Col>
+        <Col md={6} lg={8}>
+          {todoList.map(item => (
+            <TodoItem key={item.id} todo={item} />
+          ))}
+        </Col>
+      </Row>
+    </div>
   );
 }
