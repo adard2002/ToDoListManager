@@ -27,10 +27,10 @@ export default function Login() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="LoginForm" onSubmit={handleSubmit}>
       <label>Username <input type="text" name="username" /></label>
       <label>Password <input type="password" name="password" /></label>
       <button>Login</button>
     </form>
-  )
+  );
 }

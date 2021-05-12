@@ -19,7 +19,6 @@ function App() {
           <li><NavLink to = "/" exact>Home</NavLink></li>
           <li><NavLink to = "/Todo">Todo</NavLink></li>
           <li><NavLink to = "/AboutMe">About Me I'm speshal</NavLink></li>
-          <li><NavLink to = "/Form">Form</NavLink></li>
           <NavLogin user={user} />
         </ul>
         </nav>

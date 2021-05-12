@@ -1,21 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { AuthProvider } from './contexts/auth';
-import { BrowserRouter } from 'react-router-dom';
+import { useAuth } from '../../contexts/auth';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <AuthProvider>
-        <App />
-      </AuthProvider>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export default function Auth(props)
+{
+  const { children, permission } = props;
+  const { user } = useAuth();
 
-reportWebVitals();
+  // if no user return null
+  if (!user) return null;
+
+  if (permission) {
+    if (user.permissions.includes(permission)) {
+      return children;
+    } else {
+      return null;
+    }
+  }
+  return children;
+}

@@ -10,9 +10,9 @@ export function useAuth() {
 
 export function AuthProvider(props) {
   const [state] = useState({
-    user: { name: 'Adara' },
+    user: null,
   });
-
+  
   return (
     <AuthContext.Provider value={state}>
       {props.children}
