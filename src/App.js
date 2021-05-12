@@ -5,12 +5,11 @@ import './App.css';
 import Home from './Home';
 import AboutMe from './AboutMe';
 import Todo from './Todo';
-import Form from './Form';
-import NavLogin from './NavLogin';
-import Login from './auth/Login';
+import NavLogin from './components/NavLogin';
+import Login from './components/auth/Login';
 
 function App() {
-  const [user, setUser] = useState({ name: 'Adara' });
+  const [user] = useState({ name: 'Adara' });
 
   return (
     <div className="App">
@@ -35,9 +34,6 @@ function App() {
         </Route>
         <Route path="/Todo" >
           <Todo />
-        </Route>
-        <Route path="/Form">
-          <Form />
         </Route>
         <Route path="/Login">
           <Login />

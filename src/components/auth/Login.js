@@ -1,5 +1,5 @@
 import { Redirect } from 'react-router';
-import { useAuth } from '/auth';
+import { useAuth } from '../../contexts/auth';
 
 export default function Login() {
   const { user, login, logout } = useAuth();
