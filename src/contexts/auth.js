@@ -1,9 +1,15 @@
-import { useContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
-export const AuthContext = React.createContext();
+export const AuthContext = createContext();
+
+export function useAuth() {
+  const auth = useContext(AuthContext);
+  if (!auth) throw new Error('GASP YOU FORDIGOT AUTHPROVIDERRR');
+  return auth;
+}
 
 export function AuthProvider(props) {
-  const [state, setState] = useState({
+  const [state] = useState({
     user: { name: 'Adara' },
   });
 

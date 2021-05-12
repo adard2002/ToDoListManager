@@ -7,9 +7,10 @@ import AboutMe from './AboutMe';
 import Todo from './Todo';
 import Form from './Form';
 import NavLogin from './NavLogin';
+import Login from './auth/Login';
 
 function App() {
-  const [user] = useState({ name: 'Adara' });
+  const [user, setUser] = useState({ name: 'Adara' });
 
   return (
     <div className="App">
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path="/Form">
           <Form />
+        </Route>
+        <Route path="/Login">
+          <Login />
         </Route>
         </Switch>
       </main>
