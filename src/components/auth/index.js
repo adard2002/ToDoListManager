@@ -5,7 +5,6 @@ export default function Auth(props)
   const { children, permission } = props;
   const { user } = useAuth();
 
-  // if no user return null
   if (!user) return null;
 
   if (permission) {
