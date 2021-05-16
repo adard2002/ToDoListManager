@@ -44,7 +44,7 @@ export function AuthProvider(props) {
 
   function setUser(user) {
     // grabs permissions from the token
-    user = processToken(user);
+    //user = processToken(user);
 
     setState(prevState => ({
       ...prevState,
@@ -60,21 +60,21 @@ export function AuthProvider(props) {
   );
 }
 
-function processToken(user) {
-  if (!user)
-    return null;
+// function processToken(user) {
+//   if (!user)
+//     return null;
 
-    try {
-      const payload = jwt.decode(user.token);
-      if (payload){
-        console.log('token payload', payload);
-        user.permissions = payload.permissions || [];
-        return user;
-      }
-      return null;
-    }
-    catch (e) {
-      console.warn(e);
-      return null;
-    }
-}
+//     try {
+//       const payload = jwt.decode(user.token);
+//       if (payload){
+//         console.log('token payload', payload);
+//         user.permissions = payload.permissions || [];
+//         return user;
+//       }
+//       return null;
+//     }
+//     catch (e) {
+//       console.warn(e);
+//       return null;
+//     }
+// }
